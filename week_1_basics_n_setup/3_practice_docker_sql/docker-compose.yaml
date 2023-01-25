@@ -1,0 +1,26 @@
+services:
+  greendatabase:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=green_taxi
+    volumes:
+      - "./green_taxi_postgres_data:/var/lib/postgresql/data:rw"
+    ports:
+      - "5444:5432"
+    networks: 
+      - pg-green
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "8080:80"
+    networks:
+      - pg-green
+    
+networks:
+    pg-green:
+      name: pg-green
