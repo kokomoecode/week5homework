@@ -1,0 +1,27 @@
+.ipynb_checkpoints
+
+*03_test.ipynb
+*04_pyspark.ipynb
+*05_taxi_schema.ipynb
+*06_spark_sql.ipynb
+*06_spark_sql.py
+*06_spark_sql_big_query.py
+*07_groupby_join.ipynb
+*08_rdds.ipynb
+*09_spark_gcs.ipynb
+*DownloadParquet.ipynb
+Week 5 Homework.ipynb
+*cloud.md
+data/
+*download_data.sh
+*fhv_tripdata_2021-01.parquet
+*fhvhv/
+*fhvhv_tripdata_2021-06.csv
+*fhvhv_tripdata_2021-06.csv.gz
+*head.csv
+homework.ipynb
+*notes.md
+spark-warehouse/
+*taxi+_zone_lookup.csv
+*taxi_zone_lookup.csv
+*zones/
